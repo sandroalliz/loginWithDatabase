@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_border_login"
+                android:drawablePadding="20dp"
+                android:hint="Usuario"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="73dp"
+                android:maxLength="70"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_border_login"
+                android:drawablePadding="20dp"
+                android:hint="Senha"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword|text"
+                android:padding="10dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_login_btn_rounded_corner"
+                android:gravity="center_vertical"
+                android:text="Login"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/tvCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Create Account"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
