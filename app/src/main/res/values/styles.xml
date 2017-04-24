@@ -1,11 +1,279 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>-->
+    </style>
+
+    <style name="AppTheme.NoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="AppTheme.NoTitle.Splash">
+    </style>
+
+    <style name="AppTheme.NoTitle.Normal">
+        <item name="android:textColor">@color/text_main_screen</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MainToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="TextButton.Green">
+        <item name="android:height">@dimen/login_button_hight</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="PopupButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+        <item name="android:height">56dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="PopupButton.Green">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="PopupButton.Red">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <!--Header de todas as telas-->
+    <style name="HeaderText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+        <!--line space 27sp-->
+    </style>
+
+    <!--Titulo do view pager da login-->
+    <style name="HeaderText2" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+        <!--CAPTION=TRUE-->
+        <!--line space 21sp-->
+    </style>
+
+    <!--Descricao dos itens do viewpager-->
+    <style name="DescriptionText2" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+        <!--line space 21sp-->
+    </style>
+
+    <!--SubHeader das paginas que tem texto com explicação-->
+    <style name="SubHeaderText" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.84</item>
+    </style>
+
+    <style name="SubHeaderText2" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.84</item>
+    </style>
+
+    <style name="RegularText" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.84</item>
+    </style>
+
+    <!--Descricao dos campos de inputText-->
+    <style name="DescriptionText" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+        <!--line space 21sp-->
+    </style>
+
+    <!--Links-->
+    <style name="LinkText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+        <!--CAPTION=TRUE-->
+    </style>
+
+    <!--Descricao dos campos no footer (seguranca)-->
+    <style name="BottomText1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.54</item>
+        <!--line space 21sp-->
+    </style>
+
+    <!--Descricao dos campos no footer (seguranca)-->
+    <style name="BottomText2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.54</item>
+        <!--line space 21sp-->
+    </style>
+
+    <style name="HeaderText.HomeNumber">
+        <item name="android:textColor">@color/fluorescent_yellow</item>
+    </style>
+
+    <style name="TextHomeHeader">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/teal_green</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <!--Texto dos botões verde fluorescente-->
+    <style name="TextButton">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="TextCategory">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/teal_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="TextPlace">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/trolley_grey</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="TextDate">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/trolley_grey</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="TextDescBonus">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/teal_green</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="TextBonusDetails">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_turquoise</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <!--=================================================-->
+
+    <style name="HeaderSaldo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/teal_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="SubHeaderSaldo1">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sky_blue</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="SubHeaderSaldo2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sky_blue</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="NumberHeaderSaldo1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/fluorescent_yellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="NumberHeaderSaldo2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/fluorescent_yellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+
+    <style name="ProgressHeaderSaldo">
+        <item name="android:textSize">14.46sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="ProgressBonusText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="SaldoEmergSubHearderText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/teal_green</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="SaldoEmergSubHearderNumber">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/dark_turquoise</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <!--Extrato-->
+    <style name="myColoredButton">
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">36dp</item>
+        <!--<item name="android:background">#000000</item>-->
+    </style>
+
+    <style name="Bagde" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BagdeToolbar" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
     </style>
 
 </resources>

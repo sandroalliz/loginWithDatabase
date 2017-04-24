@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.senac.loginwithdatabase.RegisterActivity">
+    tools:context="com.example.senac.loginwithdatabase.Activity.RegisterActivity"
+    android:background="#37B09A">
 
     <LinearLayout
         android:id="@+id/wrapEdts"
@@ -27,9 +28,8 @@
             android:inputType="text"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textCursorDrawable="@color/colorPrimaryDark"/>
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edtPass"
@@ -41,9 +41,8 @@
             android:inputType="number"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textCursorDrawable="@color/colorPrimaryDark"/>
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edtConfPass"
@@ -55,9 +54,8 @@
             android:inputType="number"
             android:maxLines="1"
             android:singleLine="true"
-            android:textColorHint="@color/colorPrimaryDark"
-            android:textColorHighlight="@color/colorPrimaryDark"
-            android:textCursorDrawable="@color/colorPrimaryDark"/>
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btnCreate"
@@ -69,7 +67,8 @@
             android:text="Create"
             android:textStyle="normal"
             android:textSize="14sp"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

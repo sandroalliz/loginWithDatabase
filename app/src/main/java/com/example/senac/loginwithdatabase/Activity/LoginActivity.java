@@ -1,4 +1,4 @@
-package com.example.senac.loginwithdatabase;
+package com.example.senac.loginwithdatabase.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.senac.loginwithdatabase.Database.DatabaseHelper;
+import com.example.senac.loginwithdatabase.R;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText edtEmail;
@@ -47,8 +50,12 @@ public class LoginActivity extends AppCompatActivity {
                 if (databaseHelper.checkUser(edtEmail.getText().toString().trim()
                         , edtPassword.getText().toString().trim())) {
 
+
                     Toast toast = Toast.makeText(getApplicationContext(), "Login efetuado!!", Toast.LENGTH_SHORT);
                     toast.show();
+
+                    Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                    startActivity(intent);
 
 
                 } else {

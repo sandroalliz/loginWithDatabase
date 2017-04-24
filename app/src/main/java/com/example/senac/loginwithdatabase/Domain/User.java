@@ -1,4 +1,4 @@
-package com.example.senac.loginwithdatabase;
+package com.example.senac.loginwithdatabase.Domain;
 
 public class User {
 

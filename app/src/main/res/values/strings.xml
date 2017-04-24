@@ -1,3 +1,191 @@
 <resources>
-    <string name="app_name">LoginWithDatabase</string>
+
+    <!--Base-->
+    <string name="nav_drawer_opened">Drawer opened</string>
+    <string name="nav_drawer_closed">Drawer closed</string>
+    <string name="app_name">Get Food</string>
+
+
+    <string name="help_button">Precisa de ajuda?</string>
+
+    <!--Start screen-->
+    <string name="start_main_text">O aplicativo do Cartão Mais!\né um jeito fácil e rápido de você ter\nacesso a serviços e informações\nde uso do seu cartão, tudo pelo celular.</string>
+    <string name="start_slide_title">AQUI VOCÊ PODE:</string>
+    <string name="start_button">LEGAL. QUERO COMEÇAR A USAR</string>
+
+    <string-array name="start_slider_icons">
+        <item>Consultar seus limites.</item>
+        <item>Consultar seus extratos.</item>
+        <item>Receber avisos toda vez que usar seu cartão.</item>
+        <item>Outros serviços para facilitar a sua vida.</item>
+    </string-array>
+
+    <string-array name="ocuppations">
+        <item>Selecione uma ocupação</item>
+        <item>Autonomo</item>
+        <item>Assalariado</item>
+        <item>Aposentado</item>
+        <item>Desempregado</item>
+        <item>Estudante</item>
+    </string-array>
+
+
+    <!--CPF screen-->
+    <string name="cpf_header">Por favor, Digite seu CPF para validar seu cadastro</string>
+    <string name="cpf_input">Números do seu CPF</string>
+    <string name="cpf_error">CPF inválido. Tente novamente.</string>
+    <string name="cpf_secure_title">Você está em um ambiente seguro.</string>
+    <string name="cpf_secure_text">Não usaremos seu CPF para nada além de sua identificação, o Cartão Mais! respeita sua privacidade.</string>
+    <string name="cpf_button">Próximo passo</string>
+
+    <!--FirstAccessClient screen-->
+    <string name="client_header">Esse é o seu primeiro acesso. Por isso, precisamos do seu nº de celular e email.</string>
+    <string name="client_tel_input">Número do seu celular com DDD</string>
+    <string name="client_tel_error">Telefone inválido. Tente novamente.</string>
+    <string name="client_email_input">Seu e-Mail (opcional)</string>
+    <string name="client_email_error">E-mail inválido. Tente novamente.</string>
+    <string name="client_button">OK, Vamos Começar</string>
+
+    <!--FirstAccessError screen-->
+    <string name="error_header">Verificamos que você ainda não tem o Cartão Mais!</string>
+    <string name="error_site_title">Isso não é um problema, é só pedir o seu no site:</string>
+    <string name="error_site">www.cartaomais.com.br</string>
+    <string name="error_tel_title">Ou ligar na Central de Relacionamento do Cartão Mais!</string>
+    <string name="error_tel">Grande São Paulo: <a href="tel:01133571850">(11) 3357-1850</a>\nDemais localidades: <a href="tel:08007701280">0800 770 1280</a></string>
+    <string name="error_timetable">Segunda a sábado das 8h às 22h\nDomingos e feriados das 9h às 20h</string>
+
+    <!--FirstAccessDevice screen-->
+    <string name="device_header">, tudo bem?\nIdentificamos que você está usando o app pela primeira vez nesse celular.</string>
+    <string name="device_subheader">Sua senha é a mesma cadastrada anteriormente, confirme ela pra gente.</string>
+    <string name="device_pass_input">Sua senha</string>
+    <string name="device_pass_error">Senha inválida. Tente novamente.</string>
+    <string name="device_button_next">Proximo passo</string>
+    <string name="device_button_forget">Esqueci minha senha</string>
+
+    <!--Register screen-->
+    <string name="register_header">A gente precisa que você responda mais algumas questões só para concluir seu cadastro.</string>
+    <string name="register_rg_input">Números do seu RG</string>
+    <string name="register_bday_input">Data de nascimento</string>
+    <string name="register_house_input">Numero da residência</string>
+    <string name="register_title_spinner">Selecione uma ocupação</string>
+    <string name="register_button">Finalizar cadastro</string>
+
+    <!--Pin screen-->
+    <string name="pin_header">Para proteger seus dados, enviamos um código para o seu celular de nº *****XXXX por SMS.</string>
+    <string name="pin_header_begin">"Para proteger seus dados, enviamos um código para o seu celular de nº "</string>
+    <string name="pin_header_end">" por SMS."</string>
+    <string name="pin_subheader">Digite o código para validar o seu celular.</string>
+    <string name="pin_resend_forget">Reenviar código</string>
+
+    <!--SavePass screen-->
+    <string name="save_pass_header">Agora você só precisar criar uma senha. Ela deve ter entre 6 e 10 dígitos, com letras e números. Crie uma senha fácil de lembrar.</string>
+    <string name="save_pass_1">Senha</string>
+    <string name="save_pass_2">Confirme a senha</string>
+    <string name="save_pass_button">Cadastrar senha</string>
+
+    <!--Terms screen-->
+    <string name="terms_header">Termos de Uso</string>
+    <string name="terms_accept_button">Sim, aceito os termos de uso</string>
+    <string name="error">"Erro"</string>
+    <string name="newdevice_header">, digite abaixo o número atual do seu celular.</string>
+    <string name="newdevice_tel_input">Celular com DDD</string>
+    <string name="newdevice_button_next">Confirmar</string>
+    <string name="newdevice_tel_error">Número inválido</string>
+    <string name="save_pass_error_equal">A senhas devem ser iguais</string>
+    <string name="save_pass_error_valid">Senha inválida</string>
+    <string name="login_cpf_input">Números do seu CPF</string>
+    <string name="login_cpf_checkbox">Sempre lembrar meu CPF</string>
+    <string name="login_pass_checkbox">Login automático (lembrar senha)</string>
+    <string name="login_pass_input">Senha</string>
+    <string name="verify_header">Para garantir sua segurança e prosseguir, precisamos do seu RG e data de nascimento.</string>
+    <string name="verify_button">Proximo Passo</string>
+    <string name="stumble_header">Estamos passando por melhorias no aplicativo.\nFique tranquilo, você pode entrar em contato com a nossa Central de Relacionamento.</string>
+    <string name="stumble_header_name">%1$s, estamos passando por melhorias no aplicativo.\nFique tranquilo, você pode entrar em contato com a nossa Central de Relacionamento.</string>
+    <string name="update_header">Temos duas notícias para você</string>
+    <string name="update_subheader1">A primeira é que atualizamos o app para ele ficar ainda melhor</string>
+    <string name="update_subheader2">A segunda é que você precisa atualizar o app para continuar tendo acesso a sua conta.</string>
+    <string name="update_button_next">Atualizar</string>
+    <string name="pin_notify_resend">Pin solicitado!</string>
+    <string name="register_error_rg">RG inválido</string>
+    <string name="register_error_date">Data inválida</string>
+    <string name="register_error_house">Número inválido</string>
+    <string name="register_error_ocup">Selecione uma ocupação</string>
+    <string name="pin_notify_incorrect">PIN incorreto. Tente novamente</string>
+    <string name="savepass_recused">Senha recusada. Tente novamente.</string>
+    <string name="device_pass_incorrect">Senha incorreta. Tente novamente.</string>
+    <string name="pin_error">Preencha todos os campos corretamtente.</string>
+    <string name="login_header">Olá %s,\né bom ter você de volta.</string>
+    <string name="login_pass_error">Senha curta. Tente novamente.</string>
+    <string name="internet_conn_error">Verifique sua conexão com a internet e tente novamente.</string>
+    <string name="warning">Aviso!</string>
+    <string name="home_progress_text">VOCÊ AINDA PODE USAR %1$s</string>
+    <string name="home_progress_text_offlimit">LIMITE ESGOTADO</string>
+    <string name="home_progress_info">(limite emergencial)</string>
+    <string name="home_progress_bonus_inactive">(Será ativado após ultrapassar o limite de compras)</string>
+    <string name="cardlock_header">Para desbloquear ligue:</string>
+    <string name="cardlock_default">Cartão Bloqueado!</string>
+    <string name="menu_myEvents">Meus Eventos</string>
+    <string name="menu_register">Cadastrar Novo</string>
+    <string name="menu_account">Meu Cadastro</string>
+    <string name="menu_event">Eventos</string>
+    <string name="menu_promotions">Minhas Promoções</string>
+    <string name="menu_help">Me Ajuda</string>
+    <string name="menu_logout">Sair</string>
+    <string name="balance_total">Limite de compras:</string>
+    <string name="purchases_month">Compras no mês:</string>
+    <string name="due_date">Dia de Vencimento:</string>
+    <string name="def_day">01</string>
+    <string name="best_buy_date">Melhor dia para compra:</string>
+    <string name="header_saldo_normal">LIMITE DE COMPRAS</string>
+    <string name="header_saldo_emerg">LIMITE EMERGENCIAL</string>
+    <string name="header_saldo_bonus">LIMITE POR CARTÃO</string>
+    <string name="def_curency">R$0,00</string>
+    <string name="bonus_transactions">ÚLTIMAS\nTRANSAÇÔES</string>
+    <string name="menu_home">Início</string>
+    <string name="extratos_last">EXTRATOS PASSADOS</string>
+    <string name="extratos_future">EXTRATOS FUTUROS</string>
+    <string name="statement_value_used">Você já usou %1$s</string>
+    <string name="statement_value_total">Valor total: %1$s</string>
+    <string name="statement_payment_bankslip">GERAR BOLETO</string>
+    <string name="statement_payment_parcial">Pagamento parcial. Valor: %1$s. GERAR BOLETO</string>
+    <string name="statement_payment_received">Pagamento recebido. Valor %1$s</string>
+    <string name="statement_payment_received_detail">(%1$s)</string>
+    <string name="statement_payment_minimum">Mínimo: %1$s. GERAR BOLETO</string>
+    <string name="statement_payment_late">Em atraso. GERAR BOLETO</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="save_pass_terms_checkbox">Eu aceito os termos de uso desse aplicativo</string>
+    <string name="need_terms">É necessário aceitar os termos, antes de prosseguir.</string>
+    <string name="bankslip_date_info">Por padrão, a data de pagamento é configurada para a data de vencimento da fatura. Caso necessário você pode altera-la. Há incidência de juros por dia de atraso.</string>
+    <string name="gerar_boleto">Gerar boleto</string>
+    <string name="invalid_date">Data inválida!</string>
+    <string name="bankslip_other_detail">Em caso de pagamento inferior ao valor mínimo (%1$s), o cartão permanecerá bloqueado.</string>
+    <string name="bankslip_button_email">Enviar boleto por e-mail</string>
+    <string name="bankslip_info">*Limite liberado em até 3 dias úteis após o pagamento.</string>
+    <string name="bankslip_info2">** Há incidência de juros para pagamentos após a data de vencimento, pagamento mínimo, parcelamento e pagamento parcial.</string>
+    <string name="bankslip_button_copy">Copiar código</string>
+    <string name="bankslip_header">Utilize o código abaixo para fazer o pagameto de %1$s.</string>
+    <string name="copy_to_clipboard">Copiado!</string>
+    <string name="bankslip_send">Enviar</string>
+    <string name="bankslip_value_error">Valor inválido</string>
+    <string name="bankslip_email_sent">Email enviado com sucesso!</string>
+    <string name="bankslip_error">Não há boleto válido no momento</string>
+    <string name="update_register_header">Deseja atualizar o seu cadastro?</string>
+    <string name="text_no">Não</string>
+    <string name="text_yes">Sim</string>
+    <string name="text_ok">OK</string>
+    <string name="update_register_subheader">Percebemos que o e-mail digitado é diferente seu e-mail cadastrado.</string>
+    <string name="update_method_header">Deseja receber a sua fatura digital pelo novo e-mail?</string>
+    <string name="update_method_subheader">Assim, agente se comunica por lá com mais facilidade.</string>
+    <string name="luckynum_howto"><u>VEJA COMO VOCÊ PODE GANHAR NÙMEROS DA SORTE</u></string>
+    <string name="statement_payment_late_processed">Extrato processado por atraso</string>
+    <string name="title_activity_registry">RegistryActivity</string>
+    <string name="invoice_due_date">Meu dia de vencimento: <b>Todo dia %1$s</b></string>
+    <string name="user_account_updated">Alteração realizada com sucesso!</string>
+    <string name="limit_used">Limite utilizado:</string>
+    <string name="bonus_spent">Utilizado: %1$s</string>
+    <string name="password_info">A senha deve conter números e letras e não são aceitos caracteres especiais.</string>
+    <string name="empty_limits">LIMITE DISPONÍVEL PARA COMPRAS</string>
+    <string name="empty_day">-</string>
+    <string name="empty_curency">R$ -</string>
+
 </resources>

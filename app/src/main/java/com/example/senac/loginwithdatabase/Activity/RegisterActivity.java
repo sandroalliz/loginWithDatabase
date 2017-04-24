@@ -1,4 +1,4 @@
-package com.example.senac.loginwithdatabase;
+package com.example.senac.loginwithdatabase.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.senac.loginwithdatabase.Database.DatabaseHelper;
+import com.example.senac.loginwithdatabase.R;
+import com.example.senac.loginwithdatabase.Domain.User;
+import com.example.senac.loginwithdatabase.infra.App;
 
 public class RegisterActivity extends AppCompatActivity {
     private DatabaseHelper databaseHelper;
@@ -42,6 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
                     user.setPassword(edtPass.getText().toString().trim());
 
                     databaseHelper.addUser(user);
+                    App.saveSession(user);
 
                     Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
