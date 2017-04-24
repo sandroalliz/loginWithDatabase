@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.example.senac.loginwithdatabase.Activity.AboutActivity;
 import com.example.senac.loginwithdatabase.Activity.EventActivity;
 import com.example.senac.loginwithdatabase.Activity.HomeActivity;
 import com.example.senac.loginwithdatabase.Activity.MyEventsActivity;
@@ -188,10 +189,23 @@ public abstract class BaseMainActivity extends AppCompatActivity
                 }
                 break;
             }
+            case R.id.nav_about:
+            {
+                if (!(this instanceof AboutActivity))
+                {
+                    startAboutActivity();
+                }
+                break;
             }
+        }
         
         return false;
     }
+
+    private void startAboutActivity() {
+        startActivity(new Intent(this, AboutActivity.class));
+    }
+
 
     @Override
     public boolean onOptionsItemSelected (MenuItem item)

@@ -126,6 +126,7 @@
     <string name="cardlock_default">Cartão Bloqueado!</string>
     <string name="menu_myEvents">Meus Eventos</string>
     <string name="menu_register">Cadastrar Novo</string>
+    <string name="menu_about">Sobre Nós</string>
     <string name="menu_account">Meu Cadastro</string>
     <string name="menu_event">Eventos</string>
     <string name="menu_promotions">Minhas Promoções</string>

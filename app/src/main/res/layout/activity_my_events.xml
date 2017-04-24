@@ -4,6 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.example.senac.loginwithdatabase.Activity.MyEventsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONTEUDO TESTE"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="265dp"
+        tools:layout_editor_absoluteX="67dp" />
+
 
 </android.support.constraint.ConstraintLayout>

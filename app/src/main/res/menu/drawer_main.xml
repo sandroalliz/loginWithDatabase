@@ -18,6 +18,11 @@
             android:id="@+id/nav_register"
             android:icon="@drawable/ic_register"
             android:title="@string/menu_register"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/menu_about"/>
+
     </group>
 
 </menu>
